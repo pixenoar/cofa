@@ -1,0 +1,46 @@
+// Tipografía
+
+.fw-black{
+	font-weight: 900;
+}
+
+// Fondos
+
+.bg-section{
+	background-color: #f3f4f6;
+}
+
+.bg-home{
+	background-image: url(../img/bg-home.jpg);
+	background-position: 60% center; 
+	background-size: cover;
+
+	@include media-breakpoint-up(lg) {
+		background-position: center center; 
+	}
+}
+
+.bg-ocy-black{
+    background-color: rgba(24, 24, 27, 0.4);
+}
+
+.bg-grad-turnos{
+	background-image: linear-gradient(to right, #10b981, #3b82f6);
+}
+
+.mt-header{
+	margin-top: 68px;
+	@include media-breakpoint-up(lg) {
+		margin-top: 82px;
+	}
+}
+
+// Anclas
+
+.ancla:before {
+	display: block;
+	content: "";
+	margin-top: -70px;
+	height: 70px;
+	visibility: hidden;
+}
